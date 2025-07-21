@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["http://localhost:57823"],
+    "origin": ["https://kirish93.github.io/dmsadmin/#/home"],
     "method": ["GET", "HEAD"],
     "maxAgeSeconds": 3600
   }
