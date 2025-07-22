@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Disaster Alert Admin</title>
+    <base href="/">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="flutter-web" content="true">
+    <meta name="description" content="Flutter Web Admin for Disaster Alerts">
+    <meta name="theme-color" content="#42a5f5">
+    <meta name="google-signin-client_id" content="132897583088-cr9hc19iu2mrd19rb0sd7uo0ep3kq58c.apps.googleusercontent.com" />
+    <!-- <link rel="manifest" href="manifest.json"> -->
+<link rel="manifest" href="/dmsadmin/manifest.json">
+
+    <script defer src="main.dart.js" type="application/javascript"></script>
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd6Y5eamQ6qhryv3tP1wNlN_reiXf3LPA&libraries=places"
+      async defer
+    ></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd6Y5eamQ6qhryv3tP1wNlN_reiXf3LPA&libraries=places"></script>
+  </head>
+  <body>
+    <!-- <script defer src="flutter.js"></script> -->
+     <script src="/dmsadmin/flutter.js" defer></script>
+
+    <flutter-view></flutter-view>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDaAW_ColZS4SZ0K185b6L7l44yNbaUEm8",
+    authDomain: "disasteralertsrilanka.firebaseapp.com",
+    projectId: "disasteralertsrilanka",
+    storageBucket: "disasteralertsrilanka.firebasestorage.app",
+    messagingSenderId: "132897583088",
+    appId: "1:132897583088:web:660ff5fe382addcf9df735",
+    measurementId: "G-Y8JTZX228C"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  </body>
+</html>
