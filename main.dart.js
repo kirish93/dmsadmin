@@ -52405,7 +52405,7 @@ case 4:a.X(t.L).f.df(A.fE(null,null,null,null,null,B.x,null,A.a5("Could not laun
 case 3:return A.u(null,r)}})
 return A.v($async$y9,r)},
 G(a){var s=this,r=null,q="+94 75 762 3620",p="kirishikaran@protonmail.com",o=t.p
-return A.fC(A.fQ(r,B.u8,r,r,B.q,r,B.aH6),B.cf,A.dm(new A.dO(B.t3,A.i6(A.bi(A.c([B.aH_,B.cq,B.aI9,B.L5,A.ags(r,new A.yb("assets/profile.jpg",r,r),r,70),B.au,B.aI_,B.aHE,B.fe,A.xi(B.rg,A.c([s.KG(a,B.bO,q,B.is,q,"tel:+94757623620"),s.KG(a,B.aS,p,B.oi,p,"mailto:kirishikaran@protonmail.com?subject=Hello&body=Hi Kirishikaran,"),s.D4(a,B.f4,B.VQ,"Chat on WhatsApp","https://wa.me/94757623620"),s.D4(a,B.d9,B.VP,"LinkedIn Profile","https://linkedin.com/in/kirishikaran"),s.D4(a,B.a2,B.VX,"GitHub","https://github.com/kirish93"),s.D4(a,B.auo,B.W0,"Facebook","https://facebook.com/kirish93")],o),B.fn,16,20),B.L5,B.aHM,B.L6],o),B.r,B.l,B.o,0,B.w),r,B.kl,r,r,B.ah),r),r,r),r,!1,r,r)},
+return A.fC(A.fQ(r,B.u8,r,r,B.q,r,B.aH6),B.cf,A.dm(new A.dO(B.t3,A.i6(A.bi(A.c([B.aH_,B.cq,B.aI9,B.L5,A.ags(r,new A.yb("assets/images/profile.jpg",r,r),r,70),B.au,B.aI_,B.aHE,B.fe,A.xi(B.rg,A.c([s.KG(a,B.bO,q,B.is,q,"tel:+94757623620"),s.KG(a,B.aS,p,B.oi,p,"mailto:kirishikaran@protonmail.com?subject=Hello&body=Hi Kirishikaran,"),s.D4(a,B.f4,B.VQ,"Chat on WhatsApp","https://wa.me/94757623620"),s.D4(a,B.d9,B.VP,"LinkedIn Profile","https://linkedin.com/in/kirishikaran"),s.D4(a,B.a2,B.VX,"GitHub","https://github.com/kirish93"),s.D4(a,B.auo,B.W0,"Facebook","https://facebook.com/kirish93")],o),B.fn,16,20),B.L5,B.aHM,B.L6],o),B.r,B.l,B.o,0,B.w),r,B.kl,r,r,B.ah),r),r,r),r,!1,r,r)},
 KG(a,b,c,d,e,f){var s=null,r=c!=null?new A.adY(this,a,c):s
 return A.hg(!1,s,!0,A.hz(A.cN(s,A.c_(A.c([A.iA(d,b,s,28),B.hD,A.c4(A.a5(e,s,s,s,B.cb,s,s,s),1)],t.p),B.r,B.l,B.o,0,s),B.v,s,s,s,s,s,s,s,B.uN,s,s,280),s,4,s,s),s,!0,s,s,s,s,s,s,s,s,s,s,r,new A.adZ(this,a,f),s,s,s,s,s,s,s)},
 D4(a,b,c,d,e){return this.KG(a,b,null,c,d,e)}}
@@ -53908,7 +53908,7 @@ break
 case 6:case 1:return A.u(q,r)
 case 2:return A.t(o.at(-1),r)}})
 return A.v($async$uc,r)},
-a3u(a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b=a2.ax,a=t.p,a0=A.c([A.b0O("assets/dmslogo.png",50,50)],a)
+a3u(a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b=a2.ax,a=t.p,a0=A.c([A.b0O("assets/images/dmslogo.png",50,50)],a)
 if(a1){s=a2.ok.r
 B.b.T(a0,A.c([B.hD,A.a5("DMS Home",c,c,c,s==null?c:s.G1(b.b,B.ad),c,c,c)],a))}a0=A.c_(a0,B.r,B.l,B.o,0,c)
 s=d.oE(0,B.VY,"Dashboard",a1)
