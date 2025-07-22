@@ -51,28 +51,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Disaster Alert Admin</title>
-    <base href="/dmsadmin/" />
+
+    <!-- Important: Set base href to the folder you're hosting the app in -->
+    <base href="/dmsadmin/">
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
-    <meta name="flutter-web" content="true" />
-    <meta name="description" content="Flutter Web Admin for Disaster Alerts" />
-    <meta name="theme-color" content="#42a5f5" />
+    <meta name="flutter-web" content="true">
+    <meta name="description" content="Flutter Web Admin for Disaster Alerts">
+    <meta name="theme-color" content="#42a5f5">
     <meta name="google-signin-client_id" content="132897583088-cr9hc19iu2mrd19rb0sd7uo0ep3kq58c.apps.googleusercontent.com" />
 
-    <link rel="manifest" href="manifest.json" />
+    <!-- Correct manifest path -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Load main.dart.js with correct path -->
     <script defer src="main.dart.js" type="application/javascript"></script>
 
-    <!-- Correct async & defer load -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd6Y5eamQ6qhryv3tP1wNlN_reiXf3LPA&libraries=places"
-    ></script>
+    <!-- Load Google Maps with async/defer for better performance -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd6Y5eamQ6qhryv3tP1wNlN_reiXf3LPA&libraries=places"></script>
   </head>
   <body>
-    <script defer src="flutter.js"></script>
+    <!-- Correct flutter.js path -->
+    <script src="flutter.js" defer></script>
+
     <flutter-view></flutter-view>
 
     <script type="module">
