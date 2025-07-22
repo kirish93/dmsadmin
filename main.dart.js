@@ -54257,7 +54257,7 @@ case 5:return A.u(null,r)
 case 1:return A.t(p.at(-1),r)}})
 return A.v($async$qm,r)},
 G(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=A.P(a),g=A.ax(a,i,t.w).w.a.a,f=g>600?420:g*0.9,e=A.c3(16),d=A.c([new A.c5(0,B.a1,B.ce,B.Fz,24)],t.sq),c=h.ok,b=c.e
-b=A.a2("Welcome Back",i,i,i,b==null?i:b.v6(B.aa),i,i,i)
+b=A.a2("Welcome to Disaster Alert & Report System",i,i,i,b==null?i:b.v6(B.aa),i,i,i)
 c=c.z
 c=A.a2("Sign in to continue to your account",i,i,i,c==null?i:c.b4(B.cW),i,i,i)
 s=j.ajW(j.d,B.vD,B.m9,"Email address")
