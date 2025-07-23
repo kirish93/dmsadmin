@@ -4,39 +4,31 @@
     <meta charset="UTF-8">
     <title>Disaster Alert Admin</title>
 
-    <!-- Hosting base path -->
-    <!-- <base href="/dmsadmin/"> -->
+
+    <!-- Important: Set base href to the folder you're hosting the app in -->
     <base href="/dmsadmin/">
 
-    <!-- Metadata -->
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <meta name="flutter-web" content="true">
     <meta name="description" content="Flutter Web Admin for Disaster Alerts">
     <meta name="theme-color" content="#42a5f5">
-
-    <!-- Google Sign-In (GIS) Client ID -->
     <meta name="google-signin-client_id" content="132897583088-cr9hc19iu2mrd19rb0sd7uo0ep3kq58c.apps.googleusercontent.com" />
 
-    <!-- Manifest and main app script -->
+    <!-- Correct manifest path -->
     <link rel="manifest" href="manifest.json">
+
+    <!-- Load main.dart.js with correct path -->
     <script defer src="main.dart.js" type="application/javascript"></script>
 
-    <!-- Google Maps (Optional if used in your Flutter app) -->
+    <!-- Load Google Maps with async/defer for better performance -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd6Y5eamQ6qhryv3tP1wNlN_reiXf3LPA&libraries=places"></script>
-
-    <!-- Load gapi for client initialization -->
-    <script src="https://apis.google.com/js/api.js"></script>
-
-    <!-- Load GIS (Google Identity Services) -->
-    <script async defer src="https://accounts.google.com/gsi/client" onload="start()"></script>
   </head>
-
   <body>
-    <!-- Flutter mounting point -->
+    <!-- Correct flutter.js path -->
     <script src="flutter.js" defer></script>
+
     <flutter-view></flutter-view>
 
-    <!-- Firebase Initialization -->
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
@@ -54,23 +46,25 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
+    
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+  function start() {
+    gapi.load('client', () => {
+      gapi.client.init({
+        apiKey: 'AIzaSyDaAW_ColZS4SZ0K185b6L7l44yNbaUEm8', // optional, only needed if using Google APIs
+        clientId: '132897583088-cr9hc19iu2mrd19rb0sd7uo0ep3kq58c.apps.googleusercontent.com',
+        discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'], // example
+        scope: 'profile email https://www.googleapis.com/auth/drive'
+      }).then(() => {
+        console.log("✅ gapi.client initialized");
+      }, (error) => {
+        console.error("❌ Error initializing gapi.client:", error);
+      });
+    });
+  }
+</script>
+<script async defer src="https://accounts.google.com/gsi/client" onload="start()"></script>
 
-    <!-- Initialize gapi client (required for Drive or other APIs) -->
-    <script>
-      function start() {
-        gapi.load('client', () => {
-          gapi.client.init({
-            apiKey: 'AIzaSyDaAW_ColZS4SZ0K185b6L7l44yNbaUEm8',
-            clientId: '132897583088-cr9hc19iu2mrd19rb0sd7uo0ep3kq58c.apps.googleusercontent.com',
-            discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'], // optional
-            scope: 'profile email https://www.googleapis.com/auth/drive'
-          }).then(() => {
-            console.log("✅ gapi.client initialized");
-          }, (error) => {
-            console.error("❌ gapi.client init error:", error);
-          });
-        });
-      }
-    </script>
   </body>
 </html>
