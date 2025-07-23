@@ -54274,7 +54274,7 @@ $S:12}
 A.aQG.prototype={
 $1(a){var s
 if(a==null||a.length===0)return"Enter your phone number"
-s=A.e0("^\\+?[0-9]{7,15}\\$",!1)
+s=A.e0("^\\+?[0-9]{7,15}$",!1)
 if(!s.b.test(a))return"Enter a valid phone number"
 return null},
 $S:12}
